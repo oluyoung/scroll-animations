@@ -32,27 +32,39 @@ section {
     cursor: pointer;
 }
 
-img:nth-child(2) {
-    transition-delay: 200ms;
-}
-
-img:nth-child(3) {
-    transition-delay: 400ms;
-}
-
-img:nth-child(4) {
-    transition-delay: 600ms;
-}
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100px);
-    transition: all 2s;
+    transition: all 1.5s;
 }
+
+.hidden__right {
+    transform: translateX(-100px);
+}
+
+.hidden__left {
+    transform: translateX(100px);
+}
+
+.hidden-scale {
+    transform: scale(0);
+}
+
+/* .hidden__transition__delay:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.hidden__transition__delay:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.hidden__transition__delay:nth-child(4) {
+    transition-delay: 600ms;
+} */
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+    transform: scale(1);
 }
