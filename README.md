@@ -55,7 +55,7 @@ The docs provide all the classes you need for animations
 
 #### How to use
 - Add the animate.css stylesheet to your project. Tutorial is shown in the docs mentioned above.
-- Add the `observer-scroll-animate.css.min.js` file to your project.
+- Add the `observer-scroll-animatecss.min.js` file to your project.
 - Add this code block to your main css file.
 ```css
 .animate__hidden {
@@ -83,3 +83,5 @@ The docs provide all the classes you need for animations
   <li><img class="animate__hidden animate__delay" data-name="animate__fadeIn" /></li>
 </ul>
 ```
+
+###### Suggestions and improvements are welcome.
