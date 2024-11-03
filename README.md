@@ -11,7 +11,6 @@ Scroll animations for HTML elements using vanilla JS & CSS or [animate.css](http
 ```css
 .scroll__hidden {
   opacity: 0;
-  filter: blur(5px);
   transition: all 1.5s;
 }
 ```
@@ -37,6 +36,8 @@ Scroll animations for HTML elements using vanilla JS & CSS or [animate.css](http
 </ul>
 ```
 
+Note: full example is in the `index.html` file.
+
 #### Different CSS classes for animations included:
 
 - Fade In: `scroll__fadeIn`
@@ -60,7 +61,6 @@ The docs provide all the classes you need for animations
 ```css
 .animate__hidden {
   opacity: 0;
-  filter: blur(5px);
   transition: all 1.5s;
 }
 ```
@@ -83,5 +83,7 @@ The docs provide all the classes you need for animations
   <li><img class="animate__hidden animate__delay" data-name="animate__fadeIn" /></li>
 </ul>
 ```
+
+Note: full example is in the `animate.style.html` file.
 
 ###### Suggestions and improvements are welcome.
