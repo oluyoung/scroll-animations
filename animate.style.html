@@ -8,13 +8,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="app.js"></script>
+    <script defer src="animate.style.js"></script>
     <style>
+      .animate__hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transition: all 1.5s;
+      }
+
       body {
-        font-family: sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0;
-        padding: 64px;
         background-color: #f0f0f0;
       }
 
@@ -22,7 +26,9 @@
         display: grid;
         place-items: center;
         align-content: center;
-        min-height: 100vh;
+        min-height: calc(100vh + 128px);
+        overflow: hidden;
+        padding: 64px;
       }
 
       .images {
@@ -42,7 +48,7 @@
   </head>
   <body>
     <section>
-      <h1 class="scroll__hidden scroll__slideInRight">
+      <h1 class="animate__hidden animate__animated" data-name="animate__slideInRight">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
         magnam ea tempore qui quia assumenda dolore blanditiis exercitationem,
         ratione itaque ipsam nihil rem natus in voluptatibus suscipit reiciendis
@@ -51,7 +57,7 @@
     </section>
 
     <section>
-      <h1 class="scroll__hidden scroll__slideInLeft">
+      <h1 class="animate__hidden animate__animated" data-name="animate__slideInLeft">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
         voluptas asperiores aut assumenda odio consectetur quisquam itaque
         officia, nam obcaecati totam reiciendis quia magni ratione optio sed
@@ -60,55 +66,61 @@
     </section>
 
     <section>
-      <h1 class="scroll__hidden scroll__scaleIn">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit
-      </h1>
+      <h1 class="animate__hidden animate__animated" data-name="animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
       <div class="images">
         <img
-          class="scroll__hidden scroll__slideInRight scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1684072108336-40bb8228888e"
           alt=""
+          data-name="animate__heartBeat"
         />
         <img
-          class="scroll__hidden scroll__slideInRight scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1718627829230-a3f11114adb5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
+          data-name="animate__bounceInUp"
         />
         <img
-          class="scroll__hidden scroll__slideInRight scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1684216116726-a6d0cea8e93f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
+          data-name="animate__bounceIn"
         />
         <img
-          class="scroll__hidden scroll__slideInRight scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1474302694023-9711af8045cf?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
+          data-name="animate__flash"
         />
       </div>
     </section>
 
-    <section class="hidden">
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+    <section>
+      <h1 class="animate__hidden animate__animated" data-name="animate__slideInDown">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
       <div class="images">
         <img
-          class="scroll__hidden scroll__fadeIn scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1684072108336-40bb8228888e"
           alt=""
+          data-name="animate__rotateIn"
         />
         <img
-          class="scroll__hidden scroll__fadeIn scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1718627829230-a3f11114adb5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
+          data-name="animate__rollIn"
         />
         <img
-          class="scroll__hidden scroll__slideInLeft scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1684216116726-a6d0cea8e93f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
+          data-name="animate__lightSpeedInRight"
         />
         <img
-          class="scroll__hidden scroll__slideInRight scroll__delay"
+          class="animate__hidden animate__animated animate__delay"
           src="https://images.unsplash.com/photo-1474302694023-9711af8045cf?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
+          data-name="animate__fadeInRightBig"
         />
       </div>
     </section>

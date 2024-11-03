@@ -1,68 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 64px;
-    background-color: #f0f0f0;
-}
-
-section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; */
-}
-
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.images img {
-    width: 100px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.hidden {
+.scroll__hidden {
     opacity: 0;
-    filter: blur(5px);
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
-.hidden__right {
+.scroll__slideInRight {
     transform: translateX(-100px);
 }
 
-.hidden__left {
+.scroll__slideInLeft {
     transform: translateX(100px);
 }
 
-.hidden-scale {
+.scroll__scaleIn {
     transform: scale(0);
 }
 
-/* .hidden__transition__delay:nth-child(2) {
-    transition-delay: 200ms;
+.scroll__fadeIn {
+    filter: blur(10px);
 }
 
-.hidden__transition__delay:nth-child(3) {
-    transition-delay: 400ms;
-}
-
-.hidden__transition__delay:nth-child(4) {
-    transition-delay: 600ms;
-} */
-
-.show {
+.scroll__shown {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
